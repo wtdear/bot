@@ -588,7 +588,21 @@ async def chydasda(inter: disnake.MessageInteraction):
 
     if inter.component.custom_id == "inf54":
         file = disnake.File("screenshots/inf54.png", filename="inf54.png")  
-        await inter.response.send_message(file = file)    
+        await inter.response.send_message(file = file) 
+
+#-------------------------------------------------------------   Отработка   -------------------------------------------------------------
+        
+@bot.slash_command()
+async def hello(ctx):
+    emb = disnake.Embed(
+        title=f"**Рад познакомиться, {ctx.author.nick}!**",
+        description="Желаю тебе удачи!",
+        color=0xdde
+        )
+    file = disnake.File("screenshots/hello.png", filename='hello.png')
+    await ctx.send(embed = emb)
+    await ctx.send(file = file)
+
 #-------------------------------------------------------------Запуск бота-------------------------------------------------------------
 
 @bot.event
