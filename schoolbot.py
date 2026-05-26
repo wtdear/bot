@@ -613,4 +613,4 @@ async def on_slash_command_error(ctx, error):
 async def on_command_error(ctx, error):
     await ctx.send(f'Произошла ошибка: {error}')
 
-bot.run('MTE2OTU0NjkxNDM3NTY2Mzc1Ng.GSMBwV.o_IdnEgONEuQViLZyMd195jGzhS9s46oZJ13MU')
+bot.run('nope :3')
